@@ -41,3 +41,50 @@ var quiz = [
     }
 
 ];
+
+var currentQuestion = 0;
+var score = 0;
+
+// Function to display the current question
+function displayQuestion() {
+    var questionElement = document.getElementById("question");
+    var optionsElement = document.getElementById("options");
+
+    questionElement.textContent = quiz[currentQuestion].question;
+
+    optionsElement.innerHTML = "";
+
+    quiz[currentQuestion].options.forEach(option => {
+        var button = document.createElement("button");
+        button.textContent = option;
+        button.addEventListener("click", handleAnswer);
+        optionsElement.appendChild(button);
+    });
+}
+
+// Function to handle user's answer
+function handleAnswer(event) {
+    var selectedOption = event.target.textContent;
+    var correctAnswer = quiz[currentQuestion].answer;
+
+    if (selectedOption === correctAnswer) {
+        score++;
+    }
+
+    currentQuestion++;
+
+    if (currentQuestion < quiz.length) {
+        displayQuestion();
+    } else {
+        displayScore();
+    }
+}
+
+// Function to display the final score
+function displayScore() {
+    var scoreElement = document.getElementById("score");
+    scoreElement.textContent = `Your score: ${score}/${quiz.length}`;
+}
+
+// Display the first question
+displayQuestion();

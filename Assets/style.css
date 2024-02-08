@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* body */
 body {
     background: rgb(193, 204, 193);
 }
+
 /* this is the header div */
 .app {
     background: white;
@@ -23,6 +25,7 @@ h1 {
     border-bottom: 2px solid;
     padding-bottom: 20px;
 }
+
 /* the option div */
 #question {
     padding: 20px 0;
@@ -60,6 +63,7 @@ h2 {
 .btn:disabled {
     cursor: no-drop;
 }
+
 /* the next button */
 #next-btn {
     background: #a19e9e;
