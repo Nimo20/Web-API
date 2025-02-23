@@ -10,15 +10,18 @@ body {
 }
 
 #button {
-    background-color: #a19e9e;
+    background-color: #554343;
+    color: #d8d8d8;
+    font-size: 20px;
     padding: 20px;
     width: 100px;
     margin: 1.8rem auto;
     display: flex;
     justify-content: center;
+    border-radius: 50px;
 }
 
-#timer {
+.timer {
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -26,21 +29,19 @@ body {
 }
 
 /* this is the header div */
-.app {
-    background: white;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto;
-    border-radius: 10px;
-    padding: 30px;
-    /* display: none; */
-}
+
 
 /*header*/
 h1 {
     font-size: 30px;
     border-bottom: 2px solid;
     padding-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -57,20 +58,37 @@ h2 {
 #options {
     padding: 10px 16px;
     width: 100%;
-    margin: 15pxpx;
+    margin: 15px;
+
 }
 
-.btn {
+#question {
+    background: #d8d8d8;
+    color: #222;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+
+    text-align: left;
+    border-radius: 20px;
+    font-size: 18px;
+    display: none;
+}
+
+.options-btn {
     background: #d8d8d8;
     color: #222;
     padding: 10px;
+    display: flex;
+    justify-self: center;
     margin: 10px 0;
-    width: 100%;
+    width: 50%;
     border: 1px solid #222;
     text-align: left;
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
+
 }
 
 input {
@@ -104,9 +122,8 @@ input {
     background: #a19e9e;
     color: #1b1616;
     width: 80px;
-    /* height: 30px; */
     padding: 10px;
-    margin: 10px auto;
+    margin: 20px;
     display: none;
     font-size: 15px;
     border-radius: 5px;
