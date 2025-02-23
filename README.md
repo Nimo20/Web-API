@@ -1,35 +1,52 @@
 # Web-API
 
-User Story
+This project is a web-based quiz application designed to help you practice coding interview questions on HTML, CSS, and JavaScript. The quiz is timed, provides immediate feedback on answers, and allows you to save your initials along with your score.
 
-AS A coding boot camp student
+## Features
 
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+- **Timed Quiz:**  
+  - The quiz starts with a 60-second timer.
+  - Incorrect answers deduct time from the timer.
 
-SO THAT I can gauge my progress compared to my peers
-Acceptance Criteria
+- **Multiple Choice Questions:**  
+  - Each question presents four possible answers.
+  - Users select an answer before proceeding to the next question.
 
-GIVEN I am taking a code quiz
+- **Immediate Feedback:**  
+  - Correct answers highlight in green.
+  - Incorrect answers highlight in red.
 
-WHEN I click the start button
+- **Score Tracking:**  
+  - Each correct answer increases the score.
+  - The final score is displayed at the end of the quiz.
 
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
+- **End-of-Quiz Submission:**  
+  - Once time runs out or all questions are answered, users can submit their initials.
+  - Scores are stored for future reference.
 
-THEN I am presented with another question
-WHEN I answer a question incorrectly
+- **Local Storage:**  
+  - Initials and scores are saved in `localStorage` for persistence.
 
-THEN time is subtracted from the clock
+## Technologies Used
 
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
+- **HTML:** Structures the quiz layout.
+- **CSS:** Styles the user interface.
+- **JavaScript:** Implements quiz logic, timer functionality, score tracking, and local storage.
 
-WHEN the game is over
+## How to Run the Application
 
-THEN I can save my initials and my score
+1. Clone or download the project files.
+2. Open `index.html` in a web browser.
+3. Click the **Start Quiz** button to begin.
+4. Answer the questions before time runs out.
+5. Submit your initials to save your score.
 
-Mock-Up
+## Future Enhancements
 
-The following animation demonstrates the application functionality:
+- Add more question categories.
+- Implement a high-score leaderboard.
+- Improve styling and animations.
 
-![image](Web-API/Assets/04-web-apis-homework-demo.gif)
+---
+
+- **Deployed Link**:  https://nimo20.github.io/Web-API/
