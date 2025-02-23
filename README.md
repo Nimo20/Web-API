@@ -49,4 +49,4 @@ This project is a web-based quiz application designed to help you practice codin
 
 ---
 
-- **Deployed Link**:  https://nimo20.github.io/Web-API/
+- **Deployed Link:**  https://nimo20.github.io/Web-API/
